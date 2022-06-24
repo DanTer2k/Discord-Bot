@@ -17,7 +17,7 @@ async def on_message(ctx):
         if ctx.author.id == config.ID_IGNORE_LIST[i]:
             await ctx.delete()
             print(str(ctx.author) + ": " + ctx.content)
-            return#
+            return
     if 'слава украине' in ctx.content.lower() or 'славу уронили' in ctx.content.lower() or 'слава україні' in ctx.content.lower():
         await ctx.channel.send('Героям Слава!')
         try: 
